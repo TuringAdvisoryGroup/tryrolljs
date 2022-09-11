@@ -30,7 +30,7 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-          "@tryrolljs/design-system": "@tryrolljs/design-system/dist/native/esm"
+          "@tryrolljs/design-system": "@tryrolljs/design-system/dist/native/esm" // Replace `native` with `ios` or `android` if you build for a specific platform
         }
       }
     ]
@@ -77,3 +77,12 @@ Use Storybook to test your changes locally.
 ```sh
 yarn start
 ```
+
+### Platform-specific components
+
+If you want to have different components for different platforms, you can use the following file extensions:
+
+- .web.(ts|tsx|js|jsx)
+- .native.(ts|tsx|js|jsx)
+- .ios.(ts|tsx|js|jsx)
+- .android.(ts|tsx|js|jsx)
